@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation">
+          <a href="./index.html" class="logo navigation__logo link"
+            >Web<span class="logo__black link">Studio</span></a
+          >
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link link">Studio</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link link current">Portfolio</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contact header__contact list">
+          <li class="contact__item">
+            <a href="info@devstudio.com" class="contact__link link">
+              <svg class="contact__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contact__item">
+            <a href="+380961111111" class="contact__link link">
+              <svg class="contact__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
+        <button type="button" class="icon-openmenu" data-menu-open>
+          <svg class="icon-menu__btn" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="container">
+            <div class="mob-menu-top">
+              <button class="icon-closemenu" type="button" data-menu-close>
+                <svg class="icon-closemenu__btn" width="19" height="19">
+                  <use href="./images/icons.svg#icon-closemenu"></use>
+                </svg>
+              </button>
+              <nav class="mob-menu-navigation">
+                <ul class="mob-menu-navigation__list list">
+                  <li class="mob-menu-navigation__item">
+                    <a href="./index.html" class="mob-menu-navigation__link link">Studio</a>
+                  </li>
+                  <li class="mob-menu-navigation__item">
+                    <a href="./portfolio.html" class="mob-menu-navigation__link link current"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="mob-menu-navigation__item">
+                    <a href="#" class="mob-menu-navigation__link link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="mob-menu-bottom">
+              <ul class="mob-menu-contact list">
+                <li class="mob-menu-contact__item">
+                  <a href="+380961111111" class="mob-menu-contact__tel link">+38 096 111 11 11</a>
+                </li>
+                <li class="mob-menu-contact__item">
+                  <a href="info@devstudio.com" class="mob-menu-contact__mail link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mob-menu-soc">
+                <li class="mob-menu-soc__list list">
+                  <a
+                    href=""
+                    class="mob-menu-soc__link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mob-menu-soc__list list">
+                  <a
+                    href=""
+                    class="mob-menu-soc__link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mob-menu-soc__list list">
+                  <a
+                    href=""
+                    class="mob-menu-soc__link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mob-menu-soc__list list">
+                  <a
+                    href=""
+                    class="mob-menu-soc__link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="filter section">
+        <div class="container">
+          <h1 class="visually-hidden">filter</h1>
+
+          <ul class="filter-list list">
+            <li><button type="button" class="filter-btn pointer">All</button></li>
+            <li><button type="button" class="filter-btn pointer">Web-sites</button></li>
+            <li><button type="button" class="filter-btn pointer">Applications</button></li>
+            <li><button type="button" class="filter-btn pointer">Design</button></li>
+            <li><button type="button" class="filter-btn pointer">Marketing</button></li>
+          </ul>
+
+          <ul class="filter-cards list">
+            <li class="filter-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="filter-link link"
+              >
+                <div class="filter-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/example1-desktop-1x.jpg 1x,
+                        ./images/example1-desktop-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example1-tablet-1x.jpg 1x,
+                        ./images/example1-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example1-mobile-1x.jpg 1x,
+                        ./images/example1-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/example1-mobile-1x.jpg"
+                      alt="веб-сайт технокряк"
+                      class="filter-image"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="filter-overlay">
+                    The resource offers comprehensive offers with different levels of functionality
+                    and services. All this will allow the visitor to get comprehensive information
+                    about the company or private person.
+                  </p>
+                </div>
+
+                <div class="filter-wrap">
+                  <h2 class="filter-title">Technocryac</h2>
+                  <p class="filter-text">Web-site</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="filter-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="filter-link link"
+              >
+                <div class="filter-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/example2-desktop-1x.jpg 1x,
+                        ./images/example2-desktop-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example2-tablet-1x.jpg 1x,
+                        ./images/example2-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example2-mobile-1x.jpg 1x,
+                        ./images/example2-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/example2-mobile-1x.jpg"
+                      alt="постер new orlean vs golden star"
+                      class="filter-image"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="filter-overlay">
+                    The resource offers comprehensive offers with different levels of functionality
+                    and services. All this will allow the visitor to get comprehensive information
+                    about the company or private person.
+                  </p>
+                </div>
+
+                <div class="filter-wrap">
+                  <h2 class="filter-title">Poster New Orlean vs Golden Star</h2>
+                  <p class="filter-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="filter-link link"
+              >
+                <div class="filter-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/example3-desktop-1x.jpg 1x,
+                        ./images/example3-desktop-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example3-tablet-1x.jpg 1x,
+                        ./images/example3-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example3-mobile-1x.jpg 1x,
+                        ./images/example3-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/example3-mobile-1x.jpg"
+                      alt="додаток ресторану seafood"
+                      class="filter-image"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="filter-overlay">
+                    The resource offers comprehensive offers with different levels of functionality
+                    and services. All this will allow the visitor to get comprehensive information
+                    about the company or private person.
+                  </p>
+                </div>
+
+                <div class="filter-wrap">
+                  <h2 class="filter-title">Restaurant Seafood</h2>
+                  <p class="filter-text">Application</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="filter-link link"
+              >
+                <div class="filter-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/example4-desktop-1x.jpg 1x,
+                        ./images/example4-desktop-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example4-tablet-1x.jpg 1x,
+                        ./images/example4-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example4-mobile-1x.jpg 1x,
+                        ./images/example4-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/example4-mobile-1x.jpg"
+                      alt="проект prime"
+                      class="filter-image"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="filter-overlay">
+                    The resource offers comprehensive offers with different levels of functionality
+                    and services. All this will allow the visitor to get comprehensive information
+                    about the company or private person.
+                  </p>
+                </div>
+
+                <div class="filter-wrap">
+                  <h2 class="filter-title">Project Prime</h2>
+                  <p class="filter-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="filter-link link"
+              >
+                <div class="filter-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/example5-desktop-1x.jpg 1x,
+                        ./images/example5-desktop-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example5-tablet-1x.jpg 1x,
+                        ./images/example5-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example5-mobile-1x.jpg 1x,
+                        ./images/example5-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/example5-mobile-1x.jpg"
+                      alt="додаток boxes"
+                      class="filter-image"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="filter-overlay">
+                    The resource offers comprehensive offers with different levels of functionality
+                    and services. All this will allow the visitor to get comprehensive information
+                    about the company or private person.
+                  </p>
+                </div>
+
+                <div class="filter-wrap">
+                  <h2 class="filter-title">Project Boxes</h2>
+                  <p class="filter-text">Application</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="filter-link link"
+              >
+                <div class="filter-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/example6-desktop-1x.jpg 1x,
+                        ./images/example6-desktop-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example6-tablet-1x.jpg 1x,
+                        ./images/example6-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example6-mobile-1x.jpg 1x,
+                        ./images/example6-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/example6-mobile-1x.jpg"
+                      alt="веб-сайт inspiration has no border"
+                      class="filter-image"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="filter-overlay">
+                    The resource offers comprehensive offers with different levels of functionality
+                    and services. All this will allow the visitor to get comprehensive information
+                    about the company or private person.
+                  </p>
+                </div>
+
+                <div class="filter-wrap">
+                  <h2 class="filter-title">Inspiration has no Borders</h2>
+                  <p class="filter-text">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="filter-link link"
+              >
+                <div class="filter-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/example7-desktop-1x.jpg 1x,
+                        ./images/example7-desktop-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example7-tablet-1x.jpg 1x,
+                        ./images/example7-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example7-mobile-1x.jpg 1x,
+                        ./images/example7-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/example7-mobile-1x.jpg"
+                      alt="дізайн видання limited edition"
+                      class="filter-image"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="filter-overlay">
+                    The resource offers comprehensive offers with different levels of functionality
+                    and services. All this will allow the visitor to get comprehensive information
+                    about the company or private person.
+                  </p>
+                </div>
+
+                <div class="filter-wrap">
+                  <h2 class="filter-title">Publication Limited Edition</h2>
+                  <p class="filter-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="filter-link link"
+              >
+                <div class="filter-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/example8-desktop-1x.jpg 1x,
+                        ./images/example8-desktop-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example8-tablet-1x.jpg 1x,
+                        ./images/example8-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example8-mobile-1x.jpg 1x,
+                        ./images/example8-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/example8-mobile-1x.jpg"
+                      alt="проект lab"
+                      class="filter-image"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="filter-overlay">
+                    The resource offers comprehensive offers with different levels of functionality
+                    and services. All this will allow the visitor to get comprehensive information
+                    about the company or private person.
+                  </p>
+                </div>
+
+                <div class="filter-wrap">
+                  <h2 class="filter-title">Project LAB</h2>
+                  <p class="filter-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="filter-link link"
+              >
+                <div class="filter-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/example9-desktop-1x.jpg 1x,
+                        ./images/example9-desktop-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example9-tablet-1x.jpg 1x,
+                        ./images/example9-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/example9-mobile-1x.jpg 1x,
+                        ./images/example9-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/example9-mobile-1x.jpg"
+                      alt="додаток growing business"
+                      class="filter-image"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="filter-overlay">
+                    The resource offers comprehensive offers with different levels of functionality
+                    and services. All this will allow the visitor to get comprehensive information
+                    about the company or private person.
+                  </p>
+                </div>
+
+                <div class="filter-wrap">
+                  <h2 class="filter-title">Growing Business</h2>
+                  <p class="filter-text">Application</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-tablet">
+          <div class="footer-contacts">
+            <a href="./index.html" class="footer-logo link"
+              >Web<span class="footer-logo-white link">Studio</span></a
+            >
+            <address class="footer-address">
+              <ul class="footer-list list">
+                <li class="footer-item">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="footer-adr link"
+                    >Kyiv, 26 Khreschatyk str.</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="info@devstudio.com" class="footer-contact link">info@devstudio.com</a>
+                </li>
+                <li class="footer-item">
+                  <a href="+380961111111" class="footer-contact link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-join">
+            <p class="footer-action">Join</p>
+            <ul class="footer-soc list">
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-signup">
+          <p class="footer-text">Sign up for newsletter</p>
+          <form class="footer-form">
+            <input class="footer-input" type="email" name="usermail" placeholder="E-mail" />
+            <button class="third-btn pointer btn">
+              SignUp
+              <svg class="send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

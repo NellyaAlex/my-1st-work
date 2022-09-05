@@ -1,0 +1,49 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  transition: color var(--duration) var(--cubic);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.navigation__item .link.current,
+.navigation__link:hover,
+.contact__link:hover,
+.navigation__link:focus,
+.contact__link:focus,
+.footer-adr:hover,
+.footer-contact:hover,
+.footer-adr:focus,
+.footer-contact:focus,
+.mob-menu-navigation__link:hover,
+.mob-menu-navigation__link:focus {
+  color: var(--accent-color);
+}

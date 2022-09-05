@@ -1,0 +1,134 @@
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    max-width: 326px;
+  }
+
+  @include tablet {
+    justify-content: center;
+  }
+
+  gap: 8px;
+}
+
+.filter-btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  background-color: var(--third-bg-color);
+  border-color: transparent;
+  border-radius: 4px;
+  color: var(--secondbtn-text-color);
+  padding: 6px 22px;
+  transition: background-color var(--duration) var(--cubic), color var(--duration) var(--cubic),
+    box-shadow var(--duration) var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--btn-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.filter-cards {
+  @media screen and (max-width: 767px) {
+    margin-top: 40px;
+  }
+
+  @include tablet {
+    margin-top: 14px;
+  }
+
+  @include desktop {
+    margin-top: 34px;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.filter-item {
+  background-color: var(--main-bg-color);
+  // width: calc((100% - 60px) / 3);
+  width: 100%;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.filter-link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.filter-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.filter-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: var(--duration) var(--cubic);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  background: rgba(33, 150, 243, 0.9);
+  /* overflow: auto; */
+
+  .filter-link:hover &,
+  .filter-link:focus & {
+    transform: translateY(0);
+  }
+}
+
+.filter-wrap {
+  padding: 20px 24px;
+  border-right: 1px solid var(--second-border-color);
+  border-bottom: 1px solid var(--second-border-color);
+  border-left: 1px solid var(--second-border-color);
+}
+
+.filter-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+
+  &:hover,
+  &:focus {
+    color: var(--link-accent-color);
+  }
+}
+
+.filter-text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--main-text-color);
+  margin-top: 4px;
+}
